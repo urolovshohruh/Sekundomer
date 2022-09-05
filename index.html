@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .oclock{
+            width: 480px;
+            height: 310px;
+            background-color: rgb(23, 22, 22);
+            display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+            border-radius: 15px;
+        }
+        .box{
+           
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn{
+            margin: 0 auto;
+        }
+        .hour,.minut,.sekund{
+            width: 110px;
+            height: 60px;
+            background-color: rgb(255, 255, 2);
+            border: 2px solid rgb(6, 6, 6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: cursive;
+            font-size: 33px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+        .btn button{
+            width: 100px;
+            height: 35px;
+            margin: 0px 5px;
+            background-color: rgb(134, 115, 6);
+            border: none;
+            border-radius:20px ;
+            font-family: cursive;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .btn button:hover{
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="oclock">
+        <h2 style="color: yellow; font-family: cursive;">Sekundomer</h2>
+<div class="box"><div class="hour" id="minut"></div>
+<div class="minut" id="sekund"></div>
+<div class="sekund" id="millisekund"></div>
+</div>
+<div class="btn">
+    <button id="stop">To'xtatish</button>
+    <button id="go">Tozalash</button>
+</div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
